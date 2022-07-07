@@ -1,0 +1,9 @@
+        set up
+Thanks for downloading my python multifile module this should make haveing multible scripts easier. I am no master programmer so if you find any issues (YOU WILL) please fell free to contact me at caleballen44@outlook.com (sorry abount the typos (thats how you spell typo right?))
+If you run linux open the terminal and navigate to the parent directory of multifile and run cp ./multifile /lib/python3/dist-packages/future/moves
+For other operating systems move this folder to whichever folder where the modules are stored.
+
+        usage
+You need one program to be the ringleader of the whole operation while the rest of the programs are being controlled by the master program. it is reccommended that the master program contains the mainloop though the sub- programs can launch off eachother.
+The first line of the program needs to import multifile. how the programm must look is not all that static when you need to launch off another program decide how it should be launched off. Should the master program continue running while the new program runs (deamon style) or should the master program pause untill the new programm is done (next style).
+If it needs to be launched off deamon style then the command is multifile.deamon(<path to file>). or if it is next style multifile.next(<path to file>).
